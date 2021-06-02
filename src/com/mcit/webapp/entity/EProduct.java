@@ -22,15 +22,19 @@ public class EProduct {
 		this.modifiedAt = new Date();
 	}
 
-	public EProduct(int id, String name, Double price, Date createdAt, Date modifiedAt) {
+	public EProduct(int id, String name, Double price) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;
-		this.createdAt = createdAt;
-		this.modifiedAt = modifiedAt;
+		this.createdAt = new Date();
+		this.modifiedAt = new Date();
 	}
 	
+	public EProduct(int id) {
+		this.id = id;
+	}
+
 	// get & set methods
 	public int getId() {
 		return id;
